@@ -1,0 +1,17 @@
+<section class="news">
+  <h2>{{ galleryInfo.title }}</h2>
+  <ul>
+    <li *ngFor="let news of galleryInfo.news">
+      <article style="background-image: url({{ news.picture.src }}) ;">
+        <p class="location">{{ news.location }}</p>
+        <p class="newsdate">{{ news.newsdate }}</p>
+        <div class="footerNew">
+            <h2 class="newsTitle">{{ news.headline }}</h2>
+            <p class="strapline">{{ news.strapline }}</p>
+            <div class="separator"><img src="../../../assets/img/separator.svg" alt=""></div>
+            <p class="news theme">{{ news.theme }}</p>
+        </div>
+      </article>
+    </li>
+  </ul>
+</section>
