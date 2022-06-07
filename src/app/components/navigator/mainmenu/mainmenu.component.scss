@@ -1,0 +1,9 @@
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 3rem;
+  li {
+    font-size: 1.5rem;
+  }
+}
